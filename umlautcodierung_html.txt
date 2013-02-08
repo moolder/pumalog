@@ -1,0 +1,7 @@
+9	&auml;
+8	&ouml;
+7	&uuml;
+6	&Auml;
+5	&Ouml;
+4	&Uuml;
+3	&szlig;

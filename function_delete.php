@@ -1,0 +1,3 @@
+<?
+die("do not use");
+?>

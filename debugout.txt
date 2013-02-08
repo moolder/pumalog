@@ -1,0 +1,9 @@
+orientation = 6
+maxwidth = 599
+maxheight = 992
+width = 1280
+height = 960
+percent1 = 2.1368948247078
+percent2 = 
+new_width = 599
+new_height = 449
