@@ -1,0 +1,1 @@
+rm /var/qmail/mailnames/<yourdomain>/<yourmailuser>/Maildir/new/*

@@ -5,13 +5,13 @@ require_once("include_login.php");
 $testmode = true; # true / false
 
 # Page title
-$pagetitle = "Leas Tagebuch";
+$pagetitle = "Pumalog";
 
 # path to mail files
 if ($testmode)
-	$mailpath="new/";
+	$mailpath="new/"; # for local test with manually copied mail files
 else
-	$mailpath="/var/qmail/mailnames/schuh-wie-der-schuh.de/fotos/Maildir/new/";
+	$mailpath="/var/qmail/mailnames/<yourdomain>/<yourmailuser>/Maildir/new/";
 
 # Contentpath on linux
 $contentpath="content/";

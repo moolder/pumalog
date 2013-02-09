@@ -1,0 +1,2 @@
+*       *       *       *       *       /root/script/updatepuma.sh >/dev/null 2>&1
+42      2       *       *       *       /root/script/cleanpumamail.sh >/dev/null 2>&1

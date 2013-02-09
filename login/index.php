@@ -6,9 +6,8 @@
 #	$_SERVER["PHP_AUTH_USER"] = "moolder";
 
 
-if (!isset($_SERVER["PHP_AUTH_USER"]) && isset($_SERVER["REMOTE_USER"])){
-        $_SERVER["PHP_AUTH_USER"] = $_SERVER["REMOTE_USER"];
-}
+if (!isset($_SERVER["PHP_AUTH_USER"]) && isset($_SERVER["REMOTE_USER"]))
+	$_SERVER["PHP_AUTH_USER"] = $_SERVER["REMOTE_USER"];
         
 
 # Wenn kein Benutzer über simple auth: Fehler
