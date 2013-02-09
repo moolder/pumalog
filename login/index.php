@@ -5,6 +5,12 @@
 #if ($_SERVER["HTTP_HOST"] == "localhost" || $_SERVER["HTTP_HOST"] == "gandalf")
 #	$_SERVER["PHP_AUTH_USER"] = "moolder";
 
+
+if (!isset($_SERVER["PHP_AUTH_USER"]) && isset($_SERVER["REMOTE_USER"])){
+        $_SERVER["PHP_AUTH_USER"] = $_SERVER["REMOTE_USER"];
+}
+        
+
 # Wenn kein Benutzer über simple auth: Fehler
 if (!isset($_SERVER["PHP_AUTH_USER"]))
 	die("Dieses Verzeichnis muss passwortgeschuetzt sein!");
