@@ -39,10 +39,9 @@
 <ul>
 <li>saves the uploaded pictures without quality loss. </li>
 <li>orders pictures into entries with a headline and optional text</li>
-<li>uses exif rotation info to rotate pictures</li>
-<li>manual rotation</li>
+<li>uses exif rotation info to rotate pictures - or you can manually rotate</li>
 <li>one click picture enhancement using filters</li>
-<li>...</li>
+<li>mail gateway using qmail mail files</li>
 </ul><h3>Screenshots</h3>
 
 <p><img src="http://dirtyhack.de/pumalog/screenshots/screenshot_01.jpg" alt="Screenshot 1"><img src="http://dirtyhack.de/pumalog/screenshots/screenshot_02.jpg" alt="Screenshot 2"><img src="http://dirtyhack.de/pumalog/screenshots/screenshot_03.jpg" alt="Screenshot 3"><img src="http://dirtyhack.de/pumalog/screenshots/screenshot_04.jpg" alt="Screenshot 4"></p>
@@ -50,6 +49,12 @@
 <h3>License:</h3>
 
 <p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported</a></p>
+
+<h3>Technicalities</h3>
+
+<p>Written using PHP5. 
+Optimised for apache on Linux. 
+Tested using apachefriends xampp on windows. </p>
 
 <h3>Installation instructions:</h3>
 
@@ -91,8 +96,11 @@ $userinfo["cansee"][""] = true;</p>
 <li>that have no special visibility flags</li>
 <li>that he may see according to the visibility flags</li>
 </ul><p>If you want to use the mailparser:
+Create a mail inbox - I.e. a Linux user - that will accept all your photo uploads and has no other purpose. 
 inside config.php, set $mailpath to the path where the mail files can be found. 
-move the contents of the script/ folder to /root/script</p>
+move the contents of the script/ folder to /root/script
+Edit the shell files, filling in your local paths.
+Add both shell files to your crontab.  </p>
 
 <h3>Nice to know:</h3>
 
